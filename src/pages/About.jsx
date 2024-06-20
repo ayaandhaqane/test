@@ -7,7 +7,7 @@ const Footer = lazy(() => import('../components/Footer'));
 function About() {
   return ( 
     <section id="about" className="bg-gradient-to-b from-[#101212] to-[#08201D] min-h-screen flex flex-col">
-      <Suspense fallback={<div className="text-white">Loading Header...</div>}>
+      <Suspense fallback={<Loading />}>
         <Header />
       </Suspense>
       <div className="container px-6 py-60 mx-auto flex-grow">
